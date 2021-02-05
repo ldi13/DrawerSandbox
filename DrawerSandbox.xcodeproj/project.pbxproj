@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F61B66D325CABE6400001F86 /* DrawerViewControllerTyoe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61B66D225CABE6400001F86 /* DrawerViewControllerTyoe.swift */; };
+		F61B66D825CAE70A00001F86 /* Observable+Unwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61B66D725CAE70A00001F86 /* Observable+Unwrap.swift */; };
+		F61B66DC25CAE76100001F86 /* UIViewController+Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61B66DB25CAE76100001F86 /* UIViewController+Child.swift */; };
+		F61B66E025CAEF5F00001F86 /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61B66DF25CAEF5F00001F86 /* UIViewController+Rx.swift */; };
+		F61B66E325CAEFF200001F86 /* Observable+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61B66E225CAEFF200001F86 /* Observable+Operators.swift */; };
+		F61B66E925CB011C00001F86 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F61B66E825CB011C00001F86 /* RxSwift */; };
+		F61B66EB25CB011C00001F86 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = F61B66EA25CB011C00001F86 /* RxCocoa */; };
+		F61B66ED25CB011C00001F86 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = F61B66EC25CB011C00001F86 /* RxRelay */; };
+		F61B66F125CB021D00001F86 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61B66F025CB021D00001F86 /* AppCoordinator.swift */; };
+		F61B66F525CC72F500001F86 /* DrawerContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61B66F425CC72F500001F86 /* DrawerContentViewController.swift */; };
+		F61B670525CC7EC000001F86 /* DrawerViewController+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61B670425CC7EC000001F86 /* DrawerViewController+Properties.swift */; };
+		F61B670925CC82C600001F86 /* DrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61B670825CC82C600001F86 /* DrawerViewController.swift */; };
+		F61B670C25CC833600001F86 /* DraggableDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61B670B25CC833600001F86 /* DraggableDrawerViewController.swift */; };
+		F61B671125CCA07700001F86 /* TransactionStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61B671025CCA07700001F86 /* TransactionStatusViewController.swift */; };
+		F61B671425CCA89400001F86 /* TransactionDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61B671325CCA89400001F86 /* TransactionDetailsViewController.swift */; };
+		F65E8EF625CA8F77000FCC76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65E8EF525CA8F77000FCC76 /* AppDelegate.swift */; };
+		F65E8EF825CA8F77000FCC76 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65E8EF725CA8F77000FCC76 /* SceneDelegate.swift */; };
+		F65E8EFF25CA8F78000FCC76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F65E8EFE25CA8F78000FCC76 /* Assets.xcassets */; };
+		F65E8F0225CA8F78000FCC76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F65E8F0025CA8F78000FCC76 /* LaunchScreen.storyboard */; };
+		F65E8F1825CA9454000FCC76 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F65E8F1725CA9454000FCC76 /* SnapKit */; };
+		F65E8F2C25CA9F1E000FCC76 /* DrawerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65E8F2B25CA9F1E000FCC76 /* DrawerState.swift */; };
+		F65E8F2F25CA9F29000FCC76 /* DrawerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65E8F2E25CA9F29000FCC76 /* DrawerType.swift */; };
+		F65E8F3225CA9F34000FCC76 /* DrawerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65E8F3125CA9F33000FCC76 /* DrawerView.swift */; };
+		F65E8F3525CA9F4E000FCC76 /* DrawerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65E8F3425CA9F4E000FCC76 /* DrawerHeaderView.swift */; };
+		F65E8F3A25CA9F63000FCC76 /* PassThroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65E8F3725CA9F63000FCC76 /* PassThroughView.swift */; };
+		F65E8F3B25CA9F63000FCC76 /* UIScrollView+Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65E8F3825CA9F63000FCC76 /* UIScrollView+Position.swift */; };
+		F65E8F3C25CA9F63000FCC76 /* GeometryResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65E8F3925CA9F63000FCC76 /* GeometryResolver.swift */; };
+		F65E8F4225CAA035000FCC76 /* DrawerScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65E8F4125CAA035000FCC76 /* DrawerScene.swift */; };
+		F65E8F4825CAB3F3000FCC76 /* LayoutConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65E8F4725CAB3F3000FCC76 /* LayoutConstants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F61B66D225CABE6400001F86 /* DrawerViewControllerTyoe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerViewControllerTyoe.swift; sourceTree = "<group>"; };
+		F61B66D725CAE70A00001F86 /* Observable+Unwrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+Unwrap.swift"; sourceTree = "<group>"; };
+		F61B66DB25CAE76100001F86 /* UIViewController+Child.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Child.swift"; sourceTree = "<group>"; };
+		F61B66DF25CAEF5F00001F86 /* UIViewController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
+		F61B66E225CAEFF200001F86 /* Observable+Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+Operators.swift"; sourceTree = "<group>"; };
+		F61B66F025CB021D00001F86 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		F61B66F425CC72F500001F86 /* DrawerContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerContentViewController.swift; sourceTree = "<group>"; };
+		F61B670425CC7EC000001F86 /* DrawerViewController+Properties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DrawerViewController+Properties.swift"; sourceTree = "<group>"; };
+		F61B670825CC82C600001F86 /* DrawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerViewController.swift; sourceTree = "<group>"; };
+		F61B670B25CC833600001F86 /* DraggableDrawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableDrawerViewController.swift; sourceTree = "<group>"; };
+		F61B671025CCA07700001F86 /* TransactionStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionStatusViewController.swift; sourceTree = "<group>"; };
+		F61B671325CCA89400001F86 /* TransactionDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailsViewController.swift; sourceTree = "<group>"; };
+		F65E8EF225CA8F77000FCC76 /* DrawerSandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawerSandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F65E8EF525CA8F77000FCC76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F65E8EF725CA8F77000FCC76 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F65E8EFE25CA8F78000FCC76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F65E8F0125CA8F78000FCC76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F65E8F0325CA8F78000FCC76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F65E8F2B25CA9F1E000FCC76 /* DrawerState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerState.swift; sourceTree = "<group>"; };
+		F65E8F2E25CA9F29000FCC76 /* DrawerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerType.swift; sourceTree = "<group>"; };
+		F65E8F3125CA9F33000FCC76 /* DrawerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerView.swift; sourceTree = "<group>"; };
+		F65E8F3425CA9F4E000FCC76 /* DrawerHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerHeaderView.swift; sourceTree = "<group>"; };
+		F65E8F3725CA9F63000FCC76 /* PassThroughView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassThroughView.swift; sourceTree = "<group>"; };
+		F65E8F3825CA9F63000FCC76 /* UIScrollView+Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Position.swift"; sourceTree = "<group>"; };
+		F65E8F3925CA9F63000FCC76 /* GeometryResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeometryResolver.swift; sourceTree = "<group>"; };
+		F65E8F4125CAA035000FCC76 /* DrawerScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerScene.swift; sourceTree = "<group>"; };
+		F65E8F4725CAB3F3000FCC76 /* LayoutConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutConstants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F65E8EEF25CA8F77000FCC76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F61B66EB25CB011C00001F86 /* RxCocoa in Frameworks */,
+				F61B66E925CB011C00001F86 /* RxSwift in Frameworks */,
+				F61B66ED25CB011C00001F86 /* RxRelay in Frameworks */,
+				F65E8F1825CA9454000FCC76 /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F61B66D625CAE6DE00001F86 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F61B66D725CAE70A00001F86 /* Observable+Unwrap.swift */,
+				F61B66DB25CAE76100001F86 /* UIViewController+Child.swift */,
+				F61B66DF25CAEF5F00001F86 /* UIViewController+Rx.swift */,
+				F61B66E225CAEFF200001F86 /* Observable+Operators.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F61B66EF25CB01E100001F86 /* MainScene */ = {
+			isa = PBXGroup;
+			children = (
+				F61B66F025CB021D00001F86 /* AppCoordinator.swift */,
+				F61B671025CCA07700001F86 /* TransactionStatusViewController.swift */,
+				F61B671325CCA89400001F86 /* TransactionDetailsViewController.swift */,
+			);
+			path = MainScene;
+			sourceTree = "<group>";
+		};
+		F61B66F925CC794600001F86 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F61B670825CC82C600001F86 /* DrawerViewController.swift */,
+				F61B670B25CC833600001F86 /* DraggableDrawerViewController.swift */,
+				F61B66F425CC72F500001F86 /* DrawerContentViewController.swift */,
+				F61B670425CC7EC000001F86 /* DrawerViewController+Properties.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F61B66FB25CC796F00001F86 /* Behaviors */ = {
+			isa = PBXGroup;
+			children = (
+				F65E8F2B25CA9F1E000FCC76 /* DrawerState.swift */,
+				F65E8F2E25CA9F29000FCC76 /* DrawerType.swift */,
+				F61B66D225CABE6400001F86 /* DrawerViewControllerTyoe.swift */,
+			);
+			path = Behaviors;
+			sourceTree = "<group>";
+		};
+		F61B66FD25CC79D500001F86 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				F65E8F4725CAB3F3000FCC76 /* LayoutConstants.swift */,
+				F65E8F3925CA9F63000FCC76 /* GeometryResolver.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		F65E8EE925CA8F77000FCC76 = {
+			isa = PBXGroup;
+			children = (
+				F65E8EF425CA8F77000FCC76 /* DrawerSanbox */,
+				F65E8EF325CA8F77000FCC76 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F65E8EF325CA8F77000FCC76 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F65E8EF225CA8F77000FCC76 /* DrawerSandbox.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F65E8EF425CA8F77000FCC76 /* DrawerSanbox */ = {
+			isa = PBXGroup;
+			children = (
+				F65E8EF525CA8F77000FCC76 /* AppDelegate.swift */,
+				F65E8EF725CA8F77000FCC76 /* SceneDelegate.swift */,
+				F61B66EF25CB01E100001F86 /* MainScene */,
+				F65E8F4525CAA04A000FCC76 /* DrawerKit */,
+				F61B66D625CAE6DE00001F86 /* Extensions */,
+				F65E8F1A25CA9461000FCC76 /* Supporting Files */,
+				F65E8F0325CA8F78000FCC76 /* Info.plist */,
+			);
+			path = DrawerSanbox;
+			sourceTree = "<group>";
+		};
+		F65E8F1A25CA9461000FCC76 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F65E8EFE25CA8F78000FCC76 /* Assets.xcassets */,
+				F65E8F0025CA8F78000FCC76 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F65E8F1B25CA9483000FCC76 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F65E8F3125CA9F33000FCC76 /* DrawerView.swift */,
+				F65E8F3425CA9F4E000FCC76 /* DrawerHeaderView.swift */,
+				F65E8F3725CA9F63000FCC76 /* PassThroughView.swift */,
+				F65E8F3825CA9F63000FCC76 /* UIScrollView+Position.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F65E8F4525CAA04A000FCC76 /* DrawerKit */ = {
+			isa = PBXGroup;
+			children = (
+				F65E8F4125CAA035000FCC76 /* DrawerScene.swift */,
+				F61B66FD25CC79D500001F86 /* Layout */,
+				F61B66FB25CC796F00001F86 /* Behaviors */,
+				F65E8F1B25CA9483000FCC76 /* Views */,
+				F61B66F925CC794600001F86 /* ViewControllers */,
+			);
+			path = DrawerKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F65E8EF125CA8F77000FCC76 /* DrawerSandbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F65E8F0625CA8F78000FCC76 /* Build configuration list for PBXNativeTarget "DrawerSandbox" */;
+			buildPhases = (
+				F65E8EEE25CA8F77000FCC76 /* Sources */,
+				F65E8EEF25CA8F77000FCC76 /* Frameworks */,
+				F65E8EF025CA8F77000FCC76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrawerSandbox;
+			packageProductDependencies = (
+				F65E8F1725CA9454000FCC76 /* SnapKit */,
+				F61B66E825CB011C00001F86 /* RxSwift */,
+				F61B66EA25CB011C00001F86 /* RxCocoa */,
+				F61B66EC25CB011C00001F86 /* RxRelay */,
+			);
+			productName = DrawerSanbox;
+			productReference = F65E8EF225CA8F77000FCC76 /* DrawerSandbox.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F65E8EEA25CA8F77000FCC76 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					F65E8EF125CA8F77000FCC76 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = F65E8EED25CA8F77000FCC76 /* Build configuration list for PBXProject "DrawerSandbox" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F65E8EE925CA8F77000FCC76;
+			packageReferences = (
+				F65E8F1625CA9454000FCC76 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				F61B66E725CB011C00001F86 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
+			productRefGroup = F65E8EF325CA8F77000FCC76 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F65E8EF125CA8F77000FCC76 /* DrawerSandbox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F65E8EF025CA8F77000FCC76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F65E8F0225CA8F78000FCC76 /* LaunchScreen.storyboard in Resources */,
+				F65E8EFF25CA8F78000FCC76 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F65E8EEE25CA8F77000FCC76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F61B670525CC7EC000001F86 /* DrawerViewController+Properties.swift in Sources */,
+				F65E8F3525CA9F4E000FCC76 /* DrawerHeaderView.swift in Sources */,
+				F65E8F2C25CA9F1E000FCC76 /* DrawerState.swift in Sources */,
+				F61B66F125CB021D00001F86 /* AppCoordinator.swift in Sources */,
+				F65E8F3C25CA9F63000FCC76 /* GeometryResolver.swift in Sources */,
+				F61B66D825CAE70A00001F86 /* Observable+Unwrap.swift in Sources */,
+				F61B66E325CAEFF200001F86 /* Observable+Operators.swift in Sources */,
+				F65E8F3A25CA9F63000FCC76 /* PassThroughView.swift in Sources */,
+				F61B66DC25CAE76100001F86 /* UIViewController+Child.swift in Sources */,
+				F61B670C25CC833600001F86 /* DraggableDrawerViewController.swift in Sources */,
+				F65E8EF625CA8F77000FCC76 /* AppDelegate.swift in Sources */,
+				F65E8F4825CAB3F3000FCC76 /* LayoutConstants.swift in Sources */,
+				F65E8F2F25CA9F29000FCC76 /* DrawerType.swift in Sources */,
+				F65E8F3225CA9F34000FCC76 /* DrawerView.swift in Sources */,
+				F61B66E025CAEF5F00001F86 /* UIViewController+Rx.swift in Sources */,
+				F61B66D325CABE6400001F86 /* DrawerViewControllerTyoe.swift in Sources */,
+				F65E8F4225CAA035000FCC76 /* DrawerScene.swift in Sources */,
+				F65E8F3B25CA9F63000FCC76 /* UIScrollView+Position.swift in Sources */,
+				F61B670925CC82C600001F86 /* DrawerViewController.swift in Sources */,
+				F65E8EF825CA8F77000FCC76 /* SceneDelegate.swift in Sources */,
+				F61B66F525CC72F500001F86 /* DrawerContentViewController.swift in Sources */,
+				F61B671425CCA89400001F86 /* TransactionDetailsViewController.swift in Sources */,
+				F61B671125CCA07700001F86 /* TransactionStatusViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F65E8F0025CA8F78000FCC76 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F65E8F0125CA8F78000FCC76 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F65E8F0425CA8F78000FCC76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F65E8F0525CA8F78000FCC76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F65E8F0725CA8F78000FCC76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DrawerSanbox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.secondhanding.wallapop.DrawerSandbox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F65E8F0825CA8F78000FCC76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DrawerSanbox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.secondhanding.wallapop.DrawerSandbox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F65E8EED25CA8F77000FCC76 /* Build configuration list for PBXProject "DrawerSandbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F65E8F0425CA8F78000FCC76 /* Debug */,
+				F65E8F0525CA8F78000FCC76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F65E8F0625CA8F78000FCC76 /* Build configuration list for PBXNativeTarget "DrawerSandbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F65E8F0725CA8F78000FCC76 /* Debug */,
+				F65E8F0825CA8F78000FCC76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F61B66E725CB011C00001F86 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		F65E8F1625CA9454000FCC76 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F61B66E825CB011C00001F86 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F61B66E725CB011C00001F86 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		F61B66EA25CB011C00001F86 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F61B66E725CB011C00001F86 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		F61B66EC25CB011C00001F86 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F61B66E725CB011C00001F86 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		F65E8F1725CA9454000FCC76 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F65E8F1625CA9454000FCC76 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F65E8EEA25CA8F77000FCC76 /* Project object */;
+}
